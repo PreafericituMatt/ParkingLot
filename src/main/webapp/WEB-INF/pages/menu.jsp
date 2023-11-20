@@ -1,4 +1,3 @@
-<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -9,13 +8,15 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link
-                        ${pageContext.request.requestURI.substring(pageContext.request.requestURI.lastIndexOf("/")) eq '/about.jsp' ? ' active' : ''}"
+                        <a class="nav-link active"
+                        ${pageContext.request.requestURI.substring(pageContext.request.requestURI.lastIndexOf
+                                ("/")) eq '/about.jsp' ? ' active' : ''}
                            aria-current="page" href="${pageContext.request.contextPath}/about.jsp">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link
-                        ${pageContext.request.requestURI.substring(pageContext.request.requestURI.lastIndexOf("/")) eq '/cars.jsp' ? ' active' : ''}"
+                        <a class="nav-link active"
+
+                        ${activePage eq   'Cars' ? 'active' : ''}
                            aria-current="page" href="${pageContext.request.contextPath}/Cars">Cars</a>
                     </li>
                     <li class="nav-item">
@@ -34,4 +35,3 @@
         </div>
     </nav>
 </header>
-

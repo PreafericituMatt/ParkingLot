@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-    }
-    .container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
-</head>
-<body>
-
 <footer class="container">
-  <p>&copy; 2023 Ghizasan Matei</p>
+    <%--    <p class="float-end"><a href="#">Back to top</a></p>--%>
+    <p style="text-align: center ">&copy; Ghizasan Matei, 2023 &middot; </p>
 </footer>
-</body>
-</html>

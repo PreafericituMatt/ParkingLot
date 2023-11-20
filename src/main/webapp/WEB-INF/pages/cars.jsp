@@ -1,9 +1,15 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: anton
+  Date: 11/12/2023
+  Time: 5:46 PM
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
-
 <t:pageTemplate pageTitle="Cars">
     <h1>Cars</h1>
-    <div class="container text-centered">
+    <div class="container text-center">
         <div class="row">
             <div class="col">
                 Car 1
