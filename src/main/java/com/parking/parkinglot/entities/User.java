@@ -30,7 +30,6 @@ public class User {
     }
 
     private String email;
-    private String password;
 
     public String getEmail() {
         return email;
@@ -40,6 +39,7 @@ public class User {
         this.email = email;
     }
 
+    private String password;
     public String getPassword() {
         return password;
     }
@@ -48,9 +48,10 @@ public class User {
         this.password = password;
     }
 
+
     private Collection<Car> cars;
 
-    @OneToMany(mappedBy="owner")
+    @OneToMany(mappedBy = "owner")
     public Collection<Car> getCars() {
         return cars;
     }

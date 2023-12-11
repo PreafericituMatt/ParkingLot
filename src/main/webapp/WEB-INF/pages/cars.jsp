@@ -1,37 +1,38 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: anton
-  Date: 11/12/2023
-  Time: 5:46 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <t:pageTemplate pageTitle="Cars">
-    <h1>Cars</h1>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                Car 1
-            </div>
-            <div class="col">
-                Spot 1
-            </div>
-            <div class="col">
-                User 1
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                Car 2
-            </div>
-            <div class="col">
-                Spot 2
-            </div>
-            <div class="col">
-                User 2
-            </div>
-        </div>
-    </div>
+  <h1>Cars</h1>
+  <form method="POST" action="${pageContext.request.contextPath}/Cars">
+  <a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/AddCar">Add Car</a>
+  <button class="btn btn-danger" type="submit">Delete Cars</button>
+  <div class="container text-centered">
+      <c:forEach var="car" items="${cars}">
+          <div class="row">
+              <div class="col">
+                  <input type="checkbox" name="car_ids" value="${car.id}" />
+              </div>
+
+              <div class="col">
+                  ${car.licensePlate}
+              </div>
+
+              <div class="col">
+                  ${car.parkingSpot}
+              </div>
+
+              <div class="col">
+                  ${car.ownerName}
+              </div>
+
+              <a class="btn btn-secondary col" href="${pageContext.request.contextPath}/EditCar?id=${car.id}">Edit
+                  Car</a>
+          </div>
+      </c:forEach>
+  </div>
+  </form>
+
     <h5>Free parking spots: ${numberOfFreeParkingSpots}</h5>
 </t:pageTemplate>
+

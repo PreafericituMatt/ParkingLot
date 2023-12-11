@@ -12,5 +12,20 @@ public class CarDto {
         this.parkingSpot = parkingSpot;
         this.ownerName = ownerName;
     }
-}
 
+    public Long getId() {
+        return id;
+    }
+
+    public String getLicensePlate() {
+        return licensePlate;
+    }
+
+    public String getParkingSpot() {
+        return parkingSpot;
+    }
+
+    public String getOwnerName() {
+        return ownerName;
+    }
+}
