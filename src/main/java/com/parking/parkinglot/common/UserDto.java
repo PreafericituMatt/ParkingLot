@@ -1,28 +1,25 @@
-package com.parking.parkinglot.common;
+
+        package com.parking.parkinglot.common;
+
+        import com.parking.parkinglot.entities.Car;
 
 public class UserDto {
-    Long id;
     String email;
-    String password;
     String username;
+    Long id;
 
-    public UserDto(Long id, String email, String password, String username) {
+    public UserDto(Long id, String username, String email) {
         this.id = id;
         this.email = email;
-        this.password = password;
-        this.username = username;
-    }
-
-    public Long getId() {
-        return id;
+        this.username=username;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public String getPassword() {
-        return password;
+    public Long getId() {
+        return id;
     }
 
     public String getUsername() {

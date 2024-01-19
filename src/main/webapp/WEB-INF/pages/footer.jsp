@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-    }
-    .container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
-</head>
-<body>
-
-<footer class="container">
-  <p>&copy; 2023 Presecan Stefan</p>
-</footer>
-</body>
-</html>
+<%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<footer style="text-align: center">
+    <footer style="text-align: center; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%;">
+    <span>
+        @ 2023 Sergiu Lazar
+    </span>
+    </footer>
